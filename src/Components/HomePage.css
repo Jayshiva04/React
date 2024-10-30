@@ -1,0 +1,337 @@
+.homepage {
+  font-family: Arial, sans-serif;
+  padding: 20px; /* Adding margin space around the homepage */
+  background: #f9f9f9; /* Consistent with the About page */
+}
+
+.hero {
+  background: url('/public/assets/images/Banner.png') no-repeat center center;
+  background-size: cover;
+  color: #fff;
+  padding: 60px 20px;
+  text-align: center;
+  position: relative;
+  margin-bottom:7px; /* Adding margin at the bottom */
+  border-radius: 8px; /* Matching the About page rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adding box shadow for depth */
+}
+
+.hero-content {
+  position: relative;
+  z-index: 1;
+  max-width: 800px;
+  margin: 0 auto;
+  background: rgba(0, 0, 0, 0.5); /* Semi-transparent background for the text box */
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.hero h1 {
+  font-size: 2.5em;
+  margin-bottom: 10px;
+}
+
+.hero p {
+  font-size: 1.2em;
+  margin-bottom: 20px;
+}
+
+.cta-button {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 18px;
+  color: #fff;
+  background-color: #333;
+  text-decoration: none;
+  border-radius: 4px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: #555;
+  transform: scale(1.05);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+}
+
+.featured-products-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  padding: 20px;
+}
+
+.featured-products {
+  padding: 20px;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+}
+
+.featured-products h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+  animation: float 3s ease-in-out infinite; /* This line ensures the floating effect */
+}
+
+
+.products-grid {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.product-item {
+  border: 1px solid #ddd;
+  background-color: #f0f0f0;
+  padding: 10px;
+  border-radius: 8px;
+  width: 200px;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product-item:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.product-item img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 4px;
+  transition: transform 0.3s ease;
+}
+
+.product-item:hover img {
+  transform: scale(1.05);
+}
+
+.product-item h3 {
+  font-size: 18px;
+  margin: 10px 0;
+}
+
+.product-item p {
+  font-size: 16px;
+  color: #333;
+}
+
+.add-to-cart {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 8px 12px;
+  font-size: 14px;
+  color: #333;
+  text-decoration: none;
+  border: 1px solid #333;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  color: #fff;
+  background-color: #333;
+}
+
+.add-to-cart:hover {
+  background-color: #555;
+  color: #fff;
+}
+
+.cta {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  border-radius: 10px;
+}
+
+
+.cta h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.newsletter-form {
+  display: flex;
+  justify-content: center;
+}
+
+.newsletter-input {
+  padding: 10px;
+  font-size: 16px;
+  border: none;
+  border-radius: 4px 0 0 4px;
+}
+
+.newsletter-button {
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  background-color: #555;
+  color: #fff;
+  border-radius: 0 4px 4px 0;
+  cursor: pointer;
+}
+
+.newsletter-button:hover {
+  background-color: #777;
+}
+@media (max-width: 768px) {
+  .newsletter-form {
+    flex-direction: column; /* Stack input and button vertically */
+    padding: 15px 10px; /* Adjust padding for smaller screens */
+  }
+
+  .newsletter-input {
+    font-size: 14px; /* Reduce font size */
+    padding: 8px; /* Adjust padding */
+    margin-bottom: 10px; /* Add spacing between input and button */
+  }
+
+  .newsletter-button {
+    font-size: 14px; /* Reduce font size */
+    padding: 8px 15px; /* Adjust padding */
+  }
+}
+
+@media (max-width: 480px) {
+  .newsletter-input {
+    font-size: 12px; /* Further reduce font size */
+    padding: 6px; /* Further adjust padding */
+  }
+
+  .newsletter-button {
+    font-size: 12px; /* Further reduce font size */
+    padding: 6px 10px; /* Further adjust padding */
+  }
+}
+
+.notification-slider {
+  position: fixed;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%) translateY(0);
+  background-color: rgb(51, 51, 51);
+  color: white;
+  padding: 15px 30px;
+  border-radius: 5px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  opacity: 1;
+}
+
+.notification-slider.hidden {
+  opacity: 0;
+  transform: translateX(-50%) translateY(-100%);
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateX(-50%) translateY(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(-50%) translateY(0);
+    opacity: 1;
+  }
+}
+
+.notification-slider {
+  animation: slideIn 0.5s ease-out;
+}
+
+.musical-notes-left,
+.musical-notes-right {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 300px;
+  background: url('/public/assets/images/musical-notes.png') no-repeat center center;
+  background-size: contain;
+  z-index: 0;
+}
+
+.musical-notes-left {
+  left: 0;
+  background-position: left center;
+  animation: float-left 5s infinite ease-in-out;
+}
+
+.musical-notes-right {
+  right: 0;
+  background-position: right center;
+  animation: float-right 5s infinite ease-in-out;
+}
+
+@keyframes float-left {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes float-right {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(20px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+@media (max-width: 768px) {
+  .musical-notes-left,
+  .musical-notes-right {
+    display: none; /* Hide musical notes on mobile view */
+  }
+}
+
+@media (max-width: 480px) {
+  .musical-notes-left,
+  .musical-notes-right {
+    display: none; /* Hide musical notes on smaller mobile devices */
+  }
+}
+
+.add-to-favorites {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  color: darkred;
+  border: none;
+  font-size: 1rem;
+  cursor: pointer;
+  padding: 0;
+  background: none !important;
+  box-shadow: none !important;
+  outline: none;
+}
+
+.add-to-favorites:hover {
+  color: red;
+  background: none;
+}
+@keyframes float {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}

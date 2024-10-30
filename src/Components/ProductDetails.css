@@ -1,0 +1,53 @@
+/* src/Components/ProductDetails.css */
+.product-details-card {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+}
+
+.product-image {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.product-name {
+  font-size: 2rem;
+  margin: 10px 0;
+}
+
+.product-price {
+  font-size: 1.5rem;
+  color: #333;
+}
+
+.product-history-heading,
+.product-usage-heading,
+.product-reviews-heading {
+  font-size: 1.25rem;
+  margin-top: 20px;
+}
+
+.product-history,
+.product-usage {
+  font-size: 1rem;
+  margin: 10px 0;
+}
+
+.product-reviews {
+  list-style-type: none;
+  padding: 0;
+}
+
+.review-item {
+  margin-bottom: 10px;
+  font-size: 1rem;
+}
+
+.no-reviews {
+  font-style: italic;
+}

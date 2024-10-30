@@ -1,0 +1,114 @@
+/* src/Components/AboutPage.css */
+
+.about-page-container {
+  padding: 20px;
+  background: #f9f9f9;
+}
+
+.about-page-hero {
+  background: #333;
+  color: #fff;
+  padding: 20px; /* Adjusted for a more balanced look */
+  text-align: center;
+  margin-bottom: 20px;
+  height: 300px; /* Set a specific height for consistency */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url('/public/assets/images/Banner3.jpg'); /* Use the same background image as the HomePage */
+  background-size: cover;
+  background-position: center;
+}
+
+.about-page-hero-content {
+  max-width: 800px;
+  margin: 0 auto;
+  background-color: rgba(0, 0, 0, 0.5); /* Optional: adds a dark overlay for better text visibility */
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.about-page-hero h1 {
+  font-size: 2.2em; /* Adjusted font size for balance */
+  margin-bottom: 10px;
+}
+
+.about-page-hero p {
+  font-size: 1.2em;
+}
+
+.about-page-section {
+  margin: 20px auto;
+  padding: 20px;
+  max-width: 800px;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.about-page-section h2 {
+  margin-top: 0;
+  font-size: 2em;
+  border-bottom: 2px solid #080808;
+  padding-bottom: 10px;
+}
+
+.about-page-section p {
+  font-size: 1.1em;
+  line-height: 1.6;
+}
+
+.about-page-values ul {
+  padding-left: 20px;
+}
+
+.about-page-values li {
+  margin-bottom: 10px;
+}
+
+.about-page-team-members {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.about-page-team-member {
+  flex: 1 1 calc(33.333% - 20px);
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  padding: 20px;
+}
+
+.about-page-team-member img {
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+}
+
+.about-page-testimonials-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.about-page-testimonial {
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  text-align: center;
+}
+
+.about-page-testimonial p {
+  font-size: 1.1em;
+  margin: 0;
+}
+
+.about-page-testimonial h4 {
+  margin-top: 10px;
+  font-style: italic;
+  color: #555;
+}

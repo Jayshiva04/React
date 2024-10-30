@@ -1,0 +1,80 @@
+.checkout-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: #f5f5f5;
+  position: relative;
+  padding: 20px;
+}
+
+.musical-notes-left,
+.musical-notes-right {
+  position: absolute;
+  top: 40%;
+  width: 300px;
+  height: 200px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.musical-notes-left {
+  left: 0;
+  background-image: url('/public/assets/images/musical-notes.png');
+}
+
+.musical-notes-right {
+  right: 0;
+  background-image: url('/public/assets/images/musical-notes.png');
+}
+
+.card {
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 600px;
+}
+
+.card h1 {
+  margin-top: 0;
+  text-align: center;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+/* Center the submit button */
+.submit-button-container {
+  text-align: center;
+}
+
+.submit-button {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  background-color: #484848;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+}
+
+.submit-button:hover {
+  background-color: #3e3e3e;
+}
